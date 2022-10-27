@@ -1,0 +1,34 @@
+@import  'typed';
+
+
+.input-wrapper {
+	// display: flex;
+	// align-items: center;
+	// justify-content: center;
+	// display: block;
+	// width: 100%; height: 24px;
+	// position: relative;
+
+	> input, > .placeholder {
+		// display: block;
+		// // appearance: none;
+		// position: absolute;
+		// left: 0; top: 0;
+		// width: 100%; height: 100%;
+		background-color: transparent;
+		border: none;
+	}
+	> .placeholder {
+		pointer-events: none;
+		&::before { font-weight: 600; }
+		@include typed(
+			"How high is Mount Everest?",
+			"How many stars are there?",
+			"What is the best career for me?",
+			1.5, (caret-width: 2px, caret-space: 2px)
+		);
+	}
+	> input { &:focus, &:active {
+		+ .placeholder { display: none; }
+	} }
+}

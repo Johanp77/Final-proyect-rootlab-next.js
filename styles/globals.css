@@ -15,12 +15,36 @@ a {
   box-sizing: border-box;
 }
 
+  /*  Pantallas grandes */
+
+@media (max-width: 1400px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+ /* Tabletas  */
+
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+ /* Celulares  */
+
+@media (max-width: 450px) {
+  html {
+    font-size: 12px;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
   body {
     color: white;
-    background: black;
+    background: black;  
   }
 }
