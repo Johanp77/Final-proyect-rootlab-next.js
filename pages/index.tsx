@@ -26,7 +26,7 @@ const Home: NextPage = () => {
         <main className={styles.main}>
           <div className={styles.main_title}>
             <h1 className={styles.title}>
-              Welcome to <a href="https://nextjs.org">Next.js!</a>
+              Welcome to Next.js!
             </h1>
           </div>
           <div className="input-wrapper">

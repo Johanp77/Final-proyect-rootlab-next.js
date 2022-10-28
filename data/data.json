@@ -1,7 +1,8 @@
 {
     "recipes": [
         {
-            "name": "",
+            "id" : 0,
+            "title": "",
             "ingredients": [
                 {
                     "name": "",
@@ -12,11 +13,50 @@
             "instructions": "",
             "image": "",
             "tags": [
+
+            ],
+            "category": "",
+            "time": 0
+        },
+        {
+            "id" : 1,
+            "title": "Oatmeal cookies",
+            "ingredients": [
                 {
-                    "name": ""
+                    "name": "Oats",
+                    "quantity": 120,
+                    "unit": "grams"
+                },                {
+                    "name": "egg",
+                    "quantity": 1,
+                    "unit": ""
+                },                {
+                    "name": "wheat flour",
+                    "quantity": 40,
+                    "unit": "grams"
+                },
+                {
+                    "name": "sunflower oil",
+                    "quantity": 60,
+                    "unit": "ml"
+                },
+                {
+                    "name": "white sugar",
+                    "quantity": 40,
+                    "unit": "grams"
+                },                {
+                    "name": "baking powder",
+                    "quantity": 3,
+                    "unit": "grams"
                 }
             ],
-            "category": ""
+            "instructions": "",
+            "image": "https://res.cloudinary.com/dzkollux2/image/upload/v1666941713/Next.js%20rootlab/galletas_de_avena_faciles_y_rapidas_67303_600_z4zmyp.webp",
+            "tags": [
+                "cookies", "oatmeal" , "breakfast"
+            ],
+            "category": "dessert",
+            "time": 30
         }
     ]
 }

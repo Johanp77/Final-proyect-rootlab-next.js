@@ -1,13 +1,18 @@
-import type { NextPage } from 'next'
+import type { GetServerSideProps, NextPage } from 'next'
 import { Footer } from '../../components/footer'
 import { Nav } from '../../components/Nav'
+import { IRecipes, RecipeList } from '../../components/RecipeList/RecipeList'
 import styles from '../../styles/Recipes.module.css'
 
 
+interface TProps {
+    recipes: IRecipes[],
+    response: string;
+}
 
-const Recipes: NextPage = ({ }) => {
+const Recipes: NextPage<TProps> = ({ recipes }) => {
     return (
-
+        console.log(recipes),
         <div >
             <div className={styles.main_container}>
                 <header>
@@ -16,13 +21,13 @@ const Recipes: NextPage = ({ }) => {
 
                 <main>
                     <div className={styles.main_section}>
-                    <h1>Recetas</h1>
-                    <p> 
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
+                        <h1>Recetas</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
                     </div>
                     <div>
-
+                        <RecipeList recipes={recipes} />
                     </div>
 
                 </main>
@@ -32,5 +37,18 @@ const Recipes: NextPage = ({ }) => {
     )
 }
 
-
 export default Recipes
+
+export const getServerSideProps: GetServerSideProps = async (context) => {
+
+    const recipes = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/recipes`)
+        .then((res) => res.json())
+        .then((data: IRecipes[]) => data)
+        .catch((err) => console.log(err));
+
+    return {
+        props: {
+            recipes
+        }
+    }
+}
