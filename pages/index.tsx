@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFaceLaughWink, faBookOpen, faKitchenSet } from '@fortawesome/free-solid-svg-icons'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
@@ -5,6 +7,7 @@ import Link from 'next/link'
 import { Footer } from '../components/footer'
 import { Nav } from '../components/Nav'
 import styles from '../styles/Home.module.css'
+
 
 const Home: NextPage = () => {
   return (
@@ -17,7 +20,7 @@ const Home: NextPage = () => {
 
       <div className={styles.container}>
         <header>
-          <Nav   />
+          <Nav />
         </header>
 
         <main className={styles.main}>
@@ -27,8 +30,22 @@ const Home: NextPage = () => {
             </h1>
           </div>
           <div className="input-wrapper">
-            <span    aria-label="Ask us anything"></span>
+            <span aria-label="Ask us anything"></span>
             <span className="placeholder"></span>
+          </div>
+          <div className={styles.container_icons}>
+            <div>
+              <FontAwesomeIcon icon={faFaceLaughWink} className={styles.icons} />
+              <p>+5000 users happy with us!</p>
+            </div>
+            <div>
+              <FontAwesomeIcon icon={faBookOpen}  className={styles.icons} />
+            <p>Thousands of recipes, here, for you </p>
+            </div>
+            <div>
+              <FontAwesomeIcon icon={faKitchenSet} className={styles.icons} />
+              <p>Easy to use, easy to cook</p>
+            </div>
           </div>
         </main>
       </div>
@@ -36,7 +53,7 @@ const Home: NextPage = () => {
 
 
       {/* <footer className={styles.footer}> */}
-        <Footer />
+      <Footer />
       {/* </footer> */}
     </div>
   )

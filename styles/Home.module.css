@@ -33,7 +33,45 @@
 
 .main_title{
   font-size: 2rem;
-  margin: 4.5rem 0 0 0 ;
+  margin: 4.5rem auto 0;
+}
+@media screen and (max-width: 768px){
+  .title{
+    /* margin: 4.5rem auto 0; */
+    align-items: center;
+    text-align: center;
+  }
+  .main_title{
+    margin: 0 auto;
+  }
+}
+
+
+.container_icons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem auto 0;
+}
+
+.container_icons > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 6rem;
+}
+@media screen and (max-width: 425px){
+  .container_icons{
+    flex-direction: column;
+  }
+  .container_icons > div{
+    margin: 1rem 0;
+  }
+}
+
+
+.icons{
+  width: 5rem;
 }
 
 
