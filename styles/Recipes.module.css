@@ -1,3 +1,46 @@
 .main_container{
     min-height: 100vh;
 }
+
+.main_section > h1{
+    text-align: center;
+}
+
+.main_section > p{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.list_recipe_ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Recipe.tsx file styles */
+
+.list_recipe_li{
+    background-color: rgba(56, 56, 56, 0.479);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.img_recipe{
+    width: 20rem;
+    height: 15rem;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* DetailRecipe page styles */
+

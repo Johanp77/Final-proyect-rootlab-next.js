@@ -21,9 +21,9 @@ const Recipes: NextPage<TProps> = ({ recipes }) => {
 
                 <main>
                     <div className={styles.main_section}>
-                        <h1>Recetas</h1>
+                        <h1>Recipes</h1>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Find out your favorite recipes here, with us!
                         </p>
                     </div>
                     <div>

@@ -1,6 +1,8 @@
+import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
 import { IRecipes } from "./RecipeList";
+import styles from "../../styles/Recipes.module.css";
 
 interface TProps {
     mapRecipe: IRecipes;
@@ -8,11 +10,11 @@ interface TProps {
 
 export const Recipe : FC<TProps> = ({ mapRecipe }) => {
     return (
-        <li>
-            <h3>{mapRecipe.title}</h3>
+        <li className={styles.list_recipe_li}>
             <Link href={`/recipes/${mapRecipe.id}`}>
-            <img src={mapRecipe.image} alt={mapRecipe.title} />
+            <img src={mapRecipe.image} alt={mapRecipe.title} className={styles.img_recipe}/>
             </Link>
+            <h3>{mapRecipe.title}</h3>
         </li>
     );
 }

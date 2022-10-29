@@ -1,24 +1,6 @@
 {
     "recipes": [
         {
-            "id" : 0,
-            "title": "",
-            "ingredients": [
-                {
-                    "name": "",
-                    "quantity": 0,
-                    "unit": ""
-                }
-            ],
-            "instructions": "",
-            "image": "",
-            "tags": [
-
-            ],
-            "category": "",
-            "time": 0
-        },
-        {
             "id" : 1,
             "title": "Oatmeal cookies",
             "ingredients": [

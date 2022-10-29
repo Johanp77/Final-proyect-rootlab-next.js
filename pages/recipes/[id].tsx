@@ -3,6 +3,8 @@ import { FC } from "react";
 import { Footer } from "../../components/footer";
 import { Nav } from "../../components/Nav";
 import { IRecipes } from "../../components/RecipeList/RecipeList"
+import styles from "../../styles/Recipes.module.css";
+
 
 export interface IIngredients {
     name: string;
@@ -12,17 +14,22 @@ export interface IIngredients {
 
 interface TProps {
     recipe: IRecipes
-    ingredients: IIngredients
-    }
+    ingredientsArray: IIngredients
+}
 
-    interface Props {
-        recipe: IRecipes[]
-    }
+interface Props {
+    recipe: IRecipes[]
+}
 
 
-const DetailRecipePage: NextPage<TProps> = ({recipe, ingredients}) => {
-    return(
-        console.log(ingredients),
+const DetailRecipePage: NextPage<TProps> = ({ recipe, ingredientsArray }) => {
+
+    recipe.ingredients.push(ingredientsArray)
+    console.log(recipe.ingredients)
+    console.log(ingredientsArray)
+
+    return (
+        console.log(ingredientsArray),
         <div>
             <Nav />
             <h1>Detail Recipe</h1>
@@ -41,24 +48,22 @@ const DetailRecipePage: NextPage<TProps> = ({recipe, ingredients}) => {
                 ))
             } */}
             {
-                recipe.ingredients.push(ingredients)
-}
-{
-                console.log(recipe.ingredients)
-}
+            }
+
+            <div className={styles.container_ingredients}>
             <p>{recipe.ingredients[0].name}</p>
             <p>{recipe.ingredients[0].quantity}</p>
             <p>{recipe.ingredients[0].name}</p>
 
             <p>{recipe.ingredients[2].name}</p>
-
+            </div>
 
             <Footer />
         </div>
     )
 }
 
-export const IngredientsList : FC<TProps> = ({recipe}) => {
+export const IngredientsList: FC<TProps> = ({ recipe }) => {
     return (
         console.log(recipe),
         <div>

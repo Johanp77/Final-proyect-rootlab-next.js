@@ -45,6 +45,6 @@ a {
   }
   body {
     color: white;
-    background: black;  
+    background: linear-gradient(0deg,rgb(0, 0, 0) 0,rgba(0, 0, 0, 0));
   }
 }
