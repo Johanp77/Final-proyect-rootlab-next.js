@@ -48,3 +48,13 @@ a {
     background: linear-gradient(0deg,rgb(0, 0, 0) 0,rgb(73, 72, 72));
   }
 }
+
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: light;
+  }
+  body {
+    color: white;
+    background: linear-gradient(0deg,rgb(0, 0, 0) 0,rgb(73, 72, 72));
+  }
+}
