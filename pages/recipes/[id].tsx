@@ -32,10 +32,19 @@ const DetailRecipePage: NextPage<TProps> = ({ recipe, ingredientsArray }) => {
         console.log(ingredientsArray),
         <div>
             <Nav />
-            <h1>Detail Recipe</h1>
-            <h2>{recipe.title}</h2>
-            <p>{recipe.instructions}</p>
-            <img src={recipe.image} alt={recipe.title} />
+            <h1 className={styles.recipe_main_title}>Detail Recipe</h1>
+            <div className={styles.container_img_instructions}>
+                <div className={styles.container_img_detail_recipe}>
+                    <img src={recipe.image} alt={recipe.title} className={styles.img_detail_recipe} />
+                </div>
+                <div className={styles.container_other_things}>
+                    <h2>{recipe.title}</h2>
+                    <p>Time to cook: {recipe.time} minutes</p>
+                    <p >Category: {recipe.category}</p>
+                </div>
+            </div>
+            <p className={styles.recipe_instructions}>{recipe.instructions}</p>
+
             {/* <div>{ingredients.name}</div> */}
             {/* <IngredientsList ingredients={ingredients} /> */}
             {/* {
@@ -47,15 +56,38 @@ const DetailRecipePage: NextPage<TProps> = ({ recipe, ingredientsArray }) => {
                     </div>
                 ))
             } */}
-            {
-            }
 
             <div className={styles.container_ingredients}>
-            <p>{recipe.ingredients[0].name}</p>
-            <p>{recipe.ingredients[0].quantity}</p>
-            <p>{recipe.ingredients[0].name}</p>
+                <ul>
+                    <h4>Ingredients</h4>
+                    <li>
+                        <p>{recipe.ingredients[0].name} {recipe.ingredients[0].quantity} {recipe.ingredients[0].unit}</p>
 
-            <p>{recipe.ingredients[2].name}</p>
+                        {/* {recipe.ingredients.map((ingredient) => (
+                            <li key={ingredient.name}>
+                                <p>{ingredient.name}</p>
+                                <p>{ingredient.quantity}</p>
+                                <p>{ingredient.unit}</p>
+                            </li>
+                        ))} */}
+                    </li>
+                    <li>
+                        <p>{recipe.ingredients[1].name} {recipe.ingredients[1].quantity} {recipe.ingredients[1].unit}</p>
+                    </li>
+                    <li>
+                        <p>{recipe.ingredients[2].name} {recipe.ingredients[2].quantity} {recipe.ingredients[2].unit}</p>
+                    </li>
+                    <li>
+                        <p>{recipe.ingredients[3].name} {recipe.ingredients[3].quantity} {recipe.ingredients[3].unit}</p>
+                    </li>
+                    <li>
+                        <p>{recipe.ingredients[4].name} {recipe.ingredients[4].quantity} {recipe.ingredients[4].unit}</p>
+                    </li>
+                    <li>
+                        <p>{recipe.ingredients[5].name} {recipe.ingredients[5].quantity} {recipe.ingredients[5].unit}</p>
+                    </li>
+                </ul>
+
             </div>
 
             <Footer />
