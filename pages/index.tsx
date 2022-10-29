@@ -26,7 +26,7 @@ const Home: NextPage = () => {
         <main className={styles.main}>
           <div className={styles.main_title}>
             <h1 className={styles.title}>
-              Welcome to Next.js!
+              Welcome to Recipes!
             </h1>
           </div>
           <div className="input-wrapper">
@@ -52,9 +52,9 @@ const Home: NextPage = () => {
 
 
 
-      {/* <footer className={styles.footer}> */}
+
       <Footer />
-      {/* </footer> */}
+
     </div>
   )
 }

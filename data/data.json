@@ -50,13 +50,90 @@
                     "unit": "grams"
                 }
             ],
-            "instructions": "",
+            "instructions": "1.Mix all the ingredients in a bowl to form a paste. If you have a robot mixer, much better, but if not, you can mix with a spatula. You can use white sugar, brown sugar, or panela. Line the oven tray with parchment or parchment paper and form the oatmeal cookies by making small balls with your hands and then flattening them. For crispy oatmeal cookies, the trick is not to make them too thick. 3. With the oven preheated to 200 ºC with heat up and down and with the fan function (if you have one), bake the oatmeal cookies for about 10 minutes or until they are golden brown. They should be slightly toasted, not too much. 4. Let them cool on a wire rack and enjoy them with a cup of tea or coffee.",
             "image": "https://res.cloudinary.com/dzkollux2/image/upload/v1666941713/Next.js%20rootlab/galletas_de_avena_faciles_y_rapidas_67303_600_z4zmyp.webp",
             "tags": [
                 "cookies", "oatmeal" , "breakfast"
             ],
             "category": "dessert",
             "time": 30
+        },
+        {
+            "id" : 2,
+            "title": "Red spaghetti with cream",
+            "ingredients": [
+                {
+                    "name": "spaghetti",
+                    "quantity": 200,
+                    "unit": "gr"
+                },                {
+                    "name": "tomato",
+                    "quantity": 5,
+                    "unit": "units"
+                },                {
+                    "name": "onion",
+                    "quantity": 1,
+                    "unit": "units"
+                },                {
+                    "name": "italian herbs",
+                    "quantity": null,
+                    "unit": ""
+                },                {
+                    "name": "cheese",
+                    "quantity": 50,
+                    "unit": "grams"
+                },                {
+                    "name": "acid cream",
+                    "quantity": 10,
+                    "unit": "ml"
+                }
+            ],
+            "instructions": "1. Cook the spaghetti in a pot of boiling water with salt. 2. Meanwhile, chop the onion and tomatoes into small pieces. 3. In a pan, heat the oil and sauté the onion and tomato. 4. When the onion is transparent, add the herbs and the cream. 5. When the spaghetti is cooked, drain it and add it to the pan. 6. Mix well and serve with grated cheese on top.",
+            "image": "https://t1.rg.ltmcdn.com/es/posts/7/2/6/espagueti_rojo_con_crema_74627_600.webp",
+            "tags": [
+                "pasta", "spaghetti" , "red"
+            ],
+            "category": "main course",
+            "time": 30
+        },
+        {
+            "id" : 3,
+            "title": "pancakes",
+            "ingredients": [
+                {
+                    "name": "wheat flour",
+                    "quantity": 140,
+                    "unit": "grams"
+                },                {
+                    "name": "milk",
+                    "quantity": 120,
+                    "unit": "ml"
+                },                {
+                    "name": "white sugar",
+                    "quantity": 20,
+                    "unit": "grams"
+                },                {
+                    "name": "butter",
+                    "quantity": 10,
+                    "unit": "grams"
+                },                {
+                    "name": "egg",
+                    "quantity": 1,
+                    "unit": "units"
+                },
+                {
+                    "name": "salt",
+                    "quantity": 2,
+                    "unit": "grams"
+                }
+            ],
+            "instructions": "1. Mix the flour, sugar, salt and butter in a bowl. 2. Add the egg and milk and mix until you get a smooth batter. 3. Heat a pan with a little oil and pour the batter. 4. When the pancake is golden brown on one side, flip it and cook the other side. 5. Serve with maple syrup, honey, jam, or whatever you like.",
+            "image": "https://t1.rg.ltmcdn.com/es/posts/0/9/1/panquecas_34190_600.webp",
+            "tags": [
+
+            ],
+            "category": "Breakfast",
+            "time": 15
         }
     ]
 }

@@ -20,11 +20,11 @@
 	}
 	> .placeholder {
 		pointer-events: none;
-		&::before { font-weight: 600; }
+		&::before { font-weight: 600; font-size: 1.7rem; }
 		@include typed(
-			"How high is Mount Everest?",
+			"What do you want to cook today?",
 			"How many stars are there?",
-			"What is the best career for me?",
+			"Find your favorite recipe here!",
 			1.5, (caret-width: 2px, caret-space: 2px)
 		);
 	}

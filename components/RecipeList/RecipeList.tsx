@@ -1,9 +1,11 @@
+import { IIngredients } from "../../pages/recipes/[id]";
 import { Recipe } from "./Recipe";
 
 
 export interface IRecipes {
     id: number;
     title: string;
+    ingredients: IIngredients[];
     name: string;
     quantity: number;
     unit: string;
