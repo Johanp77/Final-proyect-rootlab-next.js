@@ -1,3 +1,5 @@
+// SCSS File from "https://github.com/brandonmcconnell/typed.css" by Brandon McConnell
+
 $__typed-pauses-chars: (fwd: "\200b", bwd: "\200c", both: "\feff");
 @function __typed-percent-calc($dur-char-fwd, $dur-full-gap, $dur-char-bwd, $dur-done-gap, $dur-total, $strings, $string-nth, $char-nth, $modifier) {
 	$string: nth($strings, $string-nth);
